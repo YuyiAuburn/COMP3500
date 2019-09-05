@@ -1,0 +1,135 @@
+Script started on Tue 03 Sep 2019 11:27:45 PM CDT
+[?1034hbash-4.2$ ls
+appdata  Application Data  commands.script  Desktop  Documents	ntuser.cmd
+bash-4.2$ cd[K[Kmkdir exaple[K[K[Kmple
+bash-4.2$ cd example[Ke
+bash-4.2$ pwd
+/home/u1/yzg0032/example
+bash-4.2$ t[Kcd ..
+bash-4.2$ touch hello.cpp
+bash-4.2$ m[Kco[K[Kls
+appdata		  commands.script  Documents  hello.cpp
+Application Data  Desktop	   example    ntuser.cmd
+bash-4.2$ cp hello.cpp example
+bash-4.2$ cd ec[Kxample
+bash-4.2$ ls
+hello.cpp
+bash-4.2$ cd[K[Krm hello.cpp
+bash-4.2$ ls[K[Kcd .[K[K[K[Kls
+bash-4.2$ cd ..
+bash-4.2$ mv hello.cpp example
+bash-4.2$ cd[K[Kls
+appdata		  commands.script  Documents  ntuser.cmd
+Application Data  Desktop	   example
+bash-4.2$ cd example
+bash-4.2$ ls
+hello.cpp
+bash-4.2$ rm hello.cpp
+bash-4.2$ ls[K[Kcd[K[Kcd ..
+bash-4.2$ c[Kls -l[K[K-l
+total 8
+drwxrwxrwx. 2 yzg0032 ugrad  2 Aug 27 09:17 appdata
+drwx------+ 2 yzg0032 ugrad  2 Aug 27 09:17 Application Data
+-rw-------+ 1 yzg0032 ugrad  0 Sep  3 23:27 commands.script
+drwxr-xr-x+ 3 yzg0032 ugrad  6 Aug 27 09:17 Desktop
+drwxr-xr-x+ 5 yzg0032 ugrad  6 Aug 27 09:17 Documents
+drwx------+ 2 yzg0032 ugrad  2 Sep  3 23:29 example
+-rw-r--r--+ 1 yzg0032 ugrad 28 Aug 27 09:17 ntuser.cmd
+bash-4.2$ chmod[K[K[K[K[Kman chmor[Kd
+[?1049h[?1h=CHMOD(1)                         User Commands                        CHMOD(1)[m
+[m
+[1mNAME[0m[m
+       chmod - change file mode bits[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mchmod[0m [[4mOPTION[24m]... [4mMODE[24m[[4m,MODE[24m]... [4mFILE[24m...[m
+       [1mchmod[0m [[4mOPTION[24m]... [4mOCTAL-MODE[24m [4mFILE[24m...[m
+       [1mchmod[0m [[4mOPTION[24m]... [4m--reference=RFILE[24m [4mFILE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       This manual page documents the GNU version of [1mchmod[0m.  [1mchmod[0m changes the[m
+       file mode bits of each given file  according  to  [4mmode[24m,  which  can  be[m
+       either a symbolic representation of changes to make, or an octal number[m
+       representing the bit pattern for the new mode bits.[m
+[m
+       The format of a symbolic mode is  [[1mugoa[0m...][[[1m+-=[0m][[4mperms[24m...]...],  where[m
+       [4mperms[24m  is  either zero or more letters from the set [1mrwxXst[0m, or a single[m
+       letter from the set [1mugo[0m.  Multiple symbolic modes can be  given,  sepa‐[m
+       rated by commas.[m
+[m
+       A  combination  of the letters [1mugoa[0m controls which users' access to the[m
+       file will be changed: the user who owns it  ([1mu[0m),  other  users  in  the[m
+[7m Manual page chmod(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049lbash-4.2$ chmod 777 example
+bash-4.2$ ls -l
+total 8
+drwxrwxrwx. 2 yzg0032 ugrad  2 Aug 27 09:17 appdata
+drwx------+ 2 yzg0032 ugrad  2 Aug 27 09:17 Application Data
+-rw-------+ 1 yzg0032 ugrad  0 Sep  3 23:27 commands.script
+drwxr-xr-x+ 3 yzg0032 ugrad  6 Aug 27 09:17 Desktop
+drwxr-xr-x+ 5 yzg0032 ugrad  6 Aug 27 09:17 Documents
+drwxrwxrwx+ 2 yzg0032 ugrad  2 Sep  3 23:29 example
+-rw-r--r--+ 1 yzg0032 ugrad 28 Aug 27 09:17 ntuser.cmd
+bash-4.2$ m[Krmdir example
+bash-4.2$ ls
+appdata  Application Data  commands.script  Desktop  Documents	ntuser.cmd
+bash-4.2$ clear
+[3;J[H[2Jbash-4.2$ top
+[?1h=[?25l[H[2J(B[mtop - 23:30:12 up 18 days, 10:59,  5 users,  load average: 0.02, 0.02, 0.05(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 309 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 308 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.3 (B[m[39;49mus,(B[m[39;49m[1m  1.9 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 97.8 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m 24509148 (B[m[39;49mtotal,(B[m[39;49m[1m 22843452 (B[m[39;49mfree,(B[m[39;49m[1m   627188 (B[m[39;49mused,(B[m[39;49m[1m  1038508 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m 12386300 (B[m[39;49mtotal,(B[m[39;49m[1m 12172540 (B[m[39;49mfree,(B[m[39;49m[1m   213760 (B[m[39;49mused.(B[m[39;49m[1m 23332332 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     (B[m[39;49m[K
+(B[m[1m24726 yzg0032   20   0  168468   2532   1664 R   9.5  0.0   0:00.07 top         (B[m[39;49m[K
+(B[m    1 root      20   0   46740   4556   2492 S   0.0  0.0   3:57.08 systemd     (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.79 kthreadd    (B[m[39;49m[K
+(B[m    3 root      20   0       0      0      0 S   0.0  0.0   0:00.67 ksoftirqd/0 (B[m[39;49m[K
+(B[m    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+ (B[m[39;49m[K
+(B[m    8 root      rt   0       0      0      0 S   0.0  0.0   0:00.21 migration/0 (B[m[39;49m[K
+(B[m    9 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh      (B[m[39;49m[K
+(B[m   10 root      20   0       0      0      0 S   0.0  0.0   1:36.23 rcu_sched   (B[m[39;49m[K
+(B[m   11 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-dr+ (B[m[39;49m[K
+(B[m   12 root      rt   0       0      0      0 S   0.0  0.0   0:09.19 watchdog/0  (B[m[39;49m[K
+(B[m   13 root      rt   0       0      0      0 S   0.0  0.0   0:04.03 watchdog/1  (B[m[39;49m[K
+(B[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.56 migration/1 (B[m[39;49m[K
+(B[m   15 root      20   0       0      0      0 S   0.0  0.0   0:00.34 ksoftirqd/1 (B[m[39;49m[K
+(B[m   17 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:+ (B[m[39;49m[K
+(B[m   19 root      rt   0       0      0      0 S   0.0  0.0   0:04.22 watchdog/2  (B[m[39;49m[K
+(B[m   20 root      rt   0       0      0      0 S   0.0  0.0   0:00.32 migration/2 (B[m[39;49m[K
+(B[m   21 root      20   0       0      0      0 S   0.0  0.0   0:00.70 ksoftirqd/2 (B[m[39;49m[K[H(B[mtop - 23:30:15 up 18 days, 10:59,  5 users,  load average: 0.02, 0.02, 0.05(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.9 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.1 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m 24509148 (B[m[39;49mtotal,(B[m[39;49m[1m 22843640 (B[m[39;49mfree,(B[m[39;49m[1m   626996 (B[m[39;49mused,(B[m[39;49m[1m  1038512 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m 12386300 (B[m[39;49mtotal,(B[m[39;49m[1m 12172540 (B[m[39;49mfree,(B[m[39;49m[1m   213760 (B[m[39;49mused.(B[m[39;49m[1m 23332568 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m 8669 gdm       20   0 4664280 187728  12640 S  13.9  0.8  71:59.48 gnome-shell (B[m[39;49m[K
+(B[m 6847 root      20   0  456232  11156    504 S   0.3  0.0   1:00.72 X           (B[m[39;49m[K
+(B[m[1m24726 yzg0032   20   0  168468   2612   1716 R   0.3  0.0   0:00.08 top         (B[m[39;49m[K
+(B[m    1 root      20   0   46740   4556   2492 S   0.0  0.0   3:57.08 systemd     (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.79 kthreadd    (B[m[39;49m[K
+(B[m    3 root      20   0       0      0      0 S   0.0  0.0   0:00.67 ksoftirqd/0 (B[m[39;49m[K
+(B[m    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+ (B[m[39;49m[K
+(B[m    8 root      rt   0       0      0      0 S   0.0  0.0   0:00.21 migration/0 (B[m[39;49m[K
+(B[m    9 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh      (B[m[39;49m[K
+(B[m   10 root      20   0       0      0      0 S   0.0  0.0   1:36.23 rcu_sched   (B[m[39;49m[K
+(B[m   11 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-dr+ (B[m[39;49m[K
+(B[m   12 root      rt   0       0      0      0 S   0.0  0.0   0:09.19 watchdog/0  (B[m[39;49m[K
+(B[m   13 root      rt   0       0      0      0 S   0.0  0.0   0:04.03 watchdog/1  (B[m[39;49m[K
+(B[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.56 migration/1 (B[m[39;49m[K
+(B[m   15 root      20   0       0      0      0 S   0.0  0.0   0:00.34 ksoftirqd/1 (B[m[39;49m[K
+(B[m   17 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:+ (B[m[39;49m[K
+(B[m   19 root      rt   0       0      0      0 S   0.0  0.0   0:04.22 watchdog/2  (B[m[39;49m[K[?1l>[25;1H
+[?12l[?25h[Kbash-4.2$ who
+zzz0092  pts/0        2019-08-17 14:32 (ettin.eng.auburn.edu)
+fzn0006  pts/1        2019-09-03 09:42 (ettin.eng.auburn.edu)
+yzg0032  pts/2        2019-09-03 23:13 (ettin.eng.auburn.edu)
+yzg0032  pts/3        2019-09-03 23:27
+sht0008  pts/5        2019-09-03 22:20 (ettin.eng.auburn.edu)
+bash-4.2$ nproc
+16
+bash-4.2$ exit
+exit
+
+Script done on Tue 03 Sep 2019 11:30:27 PM CDT

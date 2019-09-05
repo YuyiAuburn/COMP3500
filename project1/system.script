@@ -1,0 +1,41 @@
+Script started on Wed 04 Sep 2019 08:17:52 PM CDT
+[?1034hbash-4.2$ more /proc/cpu[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls > [K[K[K[K[Kmore /proc/cpuinfo >[K[K
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+stepping	: 5
+microcode	: 0x1d
+cpu MHz		: 2793.016
+cache size	: 8192 KB
+physical id	: 1
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 16
+initial apicid	: 16
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov 
+pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm c
+onstant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf
+ eagerfpu pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 
+[7m--More--(0%)[27m[Kbash-4.2$ 
+bash-4.2$ mre[K[K[Kmore /proc/cpuinfo > cpuinfo.txt
+bash-4.2$ ls
+a.out	 Application Data  cpuinfo.txt	Documents   ntuser.cmd	simple.c
+appdata  commands.script   Desktop	gcc.script  simple	system.script
+bash-4.2$ more /proc/p[Kmeminfo > meminfo.txt
+bash-4.2$ more [K[K[K[K[Kls
+a.out		  commands.script  Documents	ntuser.cmd  system.script
+appdata		  cpuinfo.txt	   gcc.script	simple
+Application Data  Desktop	   meminfo.txt	simple.c
+bash-4.2$ more .[K/sbin.[K/lspci >lspci.txt
+bash-4.2$ more /proc/interrupts > interrupts.txt
+bash-4.2$ exit
+exit
+
+Script done on Wed 04 Sep 2019 08:19:29 PM CDT
