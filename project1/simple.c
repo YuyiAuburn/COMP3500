@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<math.h>
 int main() {
-	int sample[10] = {1,4,9,16,25,36,49,64,81,100};
+	int sample[10] = {4,4,9,16,25,36,49,64,81,100};
 	double average = 0;
 	int sum = 0;
 	int i;
